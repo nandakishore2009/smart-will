@@ -15,7 +15,8 @@ import { Provider } from 'react-redux';
 import { applyRouterMiddleware, Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { useScroll } from 'react-router-scroll';
-import 'sanitize.css/sanitize.css';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+// import 'sanitize.css/sanitize.css'; //Causing h1 collision
 
 // Import root app
 import App from 'containers/App';
@@ -43,6 +44,9 @@ import './global-styles';
 
 // Import root routes
 import createRoutes from './routes';
+
+// Needed for onTouchTap used by material-ui
+injectTapEventPlugin();
 
 // Create redux store with history
 // this uses the singleton browserHistory provided by react-router

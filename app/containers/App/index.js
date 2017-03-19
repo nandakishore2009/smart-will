@@ -14,6 +14,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import withProgressBar from 'components/ProgressBar';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
 
 class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
@@ -31,7 +33,9 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
             { name: 'description', content: 'Make your will' },
           ]}
         />
+        <Header />
         {React.Children.toArray(this.props.children)}
+        <Footer />
       </div>
     );
   }

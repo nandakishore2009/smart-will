@@ -36,7 +36,7 @@ function routeReducer(state = routeInitialState, action) {
       return state;
   }
 }
- 
+
 /**
  * Creates the main reducer with the asynchronously loaded ones
  */

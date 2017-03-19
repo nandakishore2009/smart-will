@@ -6,25 +6,37 @@ injectGlobal`
   body {
     height: 100%;
     width: 100%;
+    font-family: "Roboto", sans-serif;
   }
 
-  body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+.buttonGlobal {
+    font-size: 20px;
+    border-radius: 25px;
+    opacity: .9;
+}
 
-  body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+.centerAling{
+  text-align: left;
+  left: 50%; 
+  transform: translateX(-50%);
+  opacity: .95;
+}
 
-  #app {
-    background-color: #fafafa;
-    min-height: 100%;
-    min-width: 100%;
-  }
 
-  p,
-  label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.5em;
-  }
+ p {
+  line-height: 2rem;
+}
+ .icon-block {
+  padding: 0 15px;
+ }
+ .icon-block .material-icons {
+  font-size: inherit;
+}
+
+ footer.page-footer {
+  margin: 0;
+}
+
+
+
 `;

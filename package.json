@@ -236,7 +236,11 @@
     "sanitize.css": "4.1.0",
     "styled-components": "1.1.2",
     "warning": "3.0.0",
-    "whatwg-fetch": "2.0.1"
+    "whatwg-fetch": "2.0.1",
+    "react-materialize": "0.18.1",
+    "react-parallax" : "^1.2.5",
+    "react-tap-event-plugin" : "^2.0.1",
+    "material-ui" : "^0.17.0"
   },
   "devDependencies": {
     "babel-cli": "6.18.0",

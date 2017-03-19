@@ -34,6 +34,22 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
+      path: '/register',
+      name: 'registration',
+      getComponent(location, cb) {
+        System.import('containers/Registration')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/create',
+      name: 'create',
+      getComponent(location, cb) {
+        System.import('containers/CreateWill')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
