@@ -30,15 +30,16 @@ module.exports = (options) => ({
       test: /\.(eot|svg|ttf|woff|woff2)$/,
       loader: 'file-loader',
     }, {
-      test: /\.(jpg|png|gif)$/,
+      test: /\.(jpg|png|gif)$/i,
       loaders: [
         'file-loader',
         {
           loader: 'image-webpack-loader',
           query: {
             progressive: true,
-            optimizationLevel: 7,
-            interlaced: false,
+            mozjpeg: {
+              quality: 65,
+            },
             pngquant: {
               quality: '65-90',
               speed: 4,
